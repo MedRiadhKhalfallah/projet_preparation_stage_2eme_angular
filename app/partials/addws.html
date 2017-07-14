@@ -1,0 +1,22 @@
+<div ng-controller="UsersCtrl">
+    <div  id="UserAddForm">
+        <div class="input text">
+            <label for="UserNom">votre nom</label>
+            <input  placeholder="nom" ng-model="UserNom" maxlength="255" type="text" id="UserNom">
+        </div>
+        <div class="input text">
+            <label for="UserPrenom">votre prenom</label>
+            <input placeholder="prenom" ng-model="UserPrenom" maxlength="255" type="text" id="UserPrenom">
+        </div>
+        <div class="input number">
+            <label for="UserAge">votre age</label>
+            <input  placeholder="age" ng-model="UserAge" type="number" id="UserAge">
+        </div>
+        <div class="input text">
+            <label for="UserAdresse">votre adress</label>
+            <input  placeholder="adress" ng-model="UserAdresse" maxlength="255" type="text" id="UserAdresse">
+        </div>
+        
+    </div>
+    <button ng-click="adduser()">save</button>
+</div>

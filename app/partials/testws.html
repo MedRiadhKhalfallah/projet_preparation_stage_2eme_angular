@@ -1,0 +1,22 @@
+<div ng-controller="UsersCtrl" >
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>nom</th>
+            <th>prenom</th>
+            <th>age</th>
+            <th>adresse</th>
+        </tr>
+        <tr ng-repeat="user in users">
+            <td>{{user.User.id}}</td>
+            <td>{{user.User.nom}}</td>
+            <td>{{user.User.prenom}}</td>
+            <td>{{user.User.age}}</td>
+            <td>{{user.User.adresse}}</td>
+        </tr>
+    </table>
+    {{users}}
+</div>
+
+
+
